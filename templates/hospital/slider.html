@@ -1,0 +1,98 @@
+{% extends 'partial/base.html' %}
+{% load static %}
+{% block content %}
+<div class="hero-slider">
+  <!-- Slider Item -->
+  <div class="slider-item slide1" style="background-image:url({% static "images/slide1.jpg" %})">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                 <!-- Slide Content Start-->
+                 <div class="content style text-right">
+                  <h2 class="text-white">Hospi+ se soucie <br>de votre santé</h2>
+                  <p class="tag-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                  
+              </div>
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Slider Item -->
+  <div class="slider-item" style="background-image:url({% static "images/slide2.jpg" %});">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <!-- Slide Content Start -->
+                  <div class="content text-center style">
+                    <h2 class="text-white text-bold mb-2">Les meilleurs services médicaux</h2>
+                    <p class="tag-text mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deserunt, 
+                        <br>eius pariatur minus itaque nostrum.</p>
+                   
+                </div>
+                <!-- Slide Content End -->
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Slider Item -->
+  <div class="slider-item" style="background-image:url({% static "images/slide3.jpg" %})">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <!-- Slide Content Start -->
+                  <div class="content style text-center">
+                    <h2 class="text-white text-bold mb-2">Les meilleurs Docteurs</h2>
+                    <p class="tag-text mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sunt animi sequi ratione quod at earum. <br>
+                         Quis quos officiis numquam!</p>
+                    
+                </div>
+                <!-- Slide Content End -->
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+{% endblock content %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% comment %} 
+{% load static %}
+
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+
+
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="{% static "images/slide1.jpg" %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static "images/slide2.jpg" %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static "images/slide3.jpg" %}" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+ {% endcomment %}

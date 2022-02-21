@@ -1,0 +1,148 @@
+{% extends 'partial/base.html' %}
+
+{% block content %}
+
+<!--Main Header-->
+<nav class="navbar navbar-default">
+  <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+              </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                    <li class="active">
+                          <a href="{% url 'home' %}">Accueil</a>
+                    </li>
+                    <li>
+                      <a href="/adminclick">Admin</a>
+                   </li>
+                    <li>
+                          <a href="/doctorclick">Docteur</a>
+                    </li>
+                    <li>
+                          <a href="/patientclick">Patient</a>
+                    </li>
+                    <li>
+                          <a href="/contactus">Contact</a>
+                    </li>
+                    
+              </ul>
+              <ul class="nav navbar-nav" 
+              style="float: right;
+              ">
+                <li>
+                  <a href="/patientclick">Rendez-vous</a>
+                </li>
+              </ul>
+        
+        <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<!--End Main Header -->
+
+{% endblock content %}
+
+
+{% comment %} <!DOCTYPE html>
+{% load static %}
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+    .bs-example {
+      margin: 0px;
+
+    }
+
+    .navbar-brand {
+      font-size: 30px;
+      font-family: sans-serif;
+
+    }
+
+    .navbar{
+      background-color: #FFFF;
+      
+}
+
+.collapse .navbar-nav .nav-item  {
+  color: #1f1d1d;
+  font-size: 15px;
+  font-weight: 500;
+  padding-right: 20px;
+  padding-left: 20px;
+
+}
+
+.navbar .navbar-brand{
+  color: blue;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 22px;
+}
+
+
+
+
+</style>
+</head>
+
+<body>
+
+  <div class="bs-example">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-light">
+      <a href="/" class="navbar-brand">Hospi+</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav ">
+
+          <a href="/adminclick" class="nav-item nav-link">Admin</a>
+          <a href="/doctorclick" class="nav-item nav-link">Docteur</a>
+          <a href="/patientclick" class="nav-item nav-link">Patient</a>
+          <a href="/contactus" class="nav-item nav-link">Contact</a>
+
+
+        </div>
+
+        <div class="navbar-nav btn">
+          <a href="/patientclick" class="nav-item nav-link btn-color" style="
+          background: hsl(214, 100%, 50%);
+          color: #ffffff;
+          border-radius: 3px;
+          font-weight: 600;
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-decoration: none;
+          ">Rendez-vous</a>
+          
+        </div>
+
+      </div>
+    </nav>
+  </div>
+
+  
+</body>
+
+</html>
+ {% endcomment %}
