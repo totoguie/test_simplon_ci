@@ -1,0 +1,91 @@
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style de base pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Conteneur principal */
+.container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Logo et nom de l'entreprise à gauche */
+.logo {
+    background-color: red;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.logo img {
+    max-width: 150px;
+    max-height: 150px;
+    height: auto;
+    text-align: center;
+}
+
+/* Formulaire d'inscription à droite */
+.inscription-form {
+    padding: 20px;
+    flex: 2;
+}
+
+.inscription-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(209, 40, 40);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 3px;
+}
+
+button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: #fff;
+}
+
